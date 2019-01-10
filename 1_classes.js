@@ -14,7 +14,7 @@ class User {
 }
 
 class Details {
-  constructor(first, last, e) {
+  constructor(first, last, email) {
     this.f = first;
     this.l = last;
     this.e = email;
@@ -55,3 +55,21 @@ scott.status();
 var harry = new User("Harrison", "Gold User");
 harry.greet();
 harry.status();
+
+class Car {
+  constructor(make, model, year) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+  }
+  details() {
+    console.log(
+      "Make: " + this.make,
+      "Model: " + this.model,
+      "Year: " + this.year
+    );
+  }
+}
+
+var carOne = new Car("BMW", "328i", "2018");
+carOne.details();
